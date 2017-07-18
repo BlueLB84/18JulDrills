@@ -1,10 +1,5 @@
-function max(numbers) {
-  // we set `currentMax` to the value
-  // of first item in `numbers`,
-  // then we loop through `numbers`,
-  // comparing each item to `currentMax`.
-  // if the item is greater than `currentMax`,
-  // we set `currentMax` to that number.
+//   original for loop
+/*  function max(numbers) {  
   var currentMax = numbers[0];
   for (var i=0; i <= numbers.length; i++) {
     if (numbers[i] > currentMax) {
@@ -12,16 +7,23 @@ function max(numbers) {
     }
   }
   return currentMax;
+*/
+
+function max(numbers) {
+    let currentMax = numbers[0];
+    let i = 0;
+ while (i <= numbers.length) {
+     if (numbers[i] > currentMax) {
+         currentMax = numbers[i];
+     } 
+     i++;
+ }
+    return currentMax;
 }
 
-
-function min(numbers) {
-  // we set `currentMin` to the value
-  // of first item in `numbers`,
-  // then we loop through `numbers`,
-  // comparing each item to `currentMin`.
-  // if the item is less than `currentMin`,
-  // we set `currentMin` to that number.
+//  original for loop
+/*  function min(numbers) {
+  
   var currentMin = numbers[0];
   for (var i=0; i <= numbers.length; i++) {
     if (numbers[i] < currentMin) {
@@ -30,3 +32,18 @@ function min(numbers) {
   }
   return currentMin;
 }
+*/
+
+function min(numbers) {
+    let currentMin = numbers[0];
+    let i = 0;
+ while (i <= numbers.length) {
+     if (numbers[i] < currentMin) {
+         currentMin = numbers[i];
+     } 
+     i++;
+ }
+    return currentMin;
+}
+
+// original function
