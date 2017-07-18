@@ -78,5 +78,66 @@ function average2(numbers) {
     return summation/numbers.length;
 }
 
-//console.log(average2([3,6,9,12])); // 7.5
+// console.log(average2([3,6,9,12])); // 7.5
+
+
+// original Fizz Buzz function using if/else statements
+/* function fizzBuzz(countTo) {
+  var finalArr = [];
+  for (i = 1; i <= countTo; i++) {
+    
+    if (i % 15 === 0) {
+        finalArr.push("fizzbuzz");
+    } else if (i % 3 === 0) {
+        finalArr.push("fizz")
+      } else if (i % 5 === 0) {
+        finalArr.push("buzz");
+      } else {
+        finalArr.push(i);
+      }
+  }
+  return finalArr;
+}
+/* for (let i = 1; i <= countTo; i++) {
+    
+    if (i % 15 === 0) {
+        finalArr.push("fizzbuzz");
+    } else if (i % 3 === 0) {
+        finalArr.push("fizz")
+      } else if (i % 5 === 0) {
+        finalArr.push("buzz");
+      } else {
+        finalArr.push(i);
+      }
+  }
+  return finalArr;
+}
+*/
+
+function fizzBuzz(countTo) {
+  let finalArr = [];
+  let i = 1;
+  while (i <= countTo) {
+    switch (i) {
+      case i % 15 === 0:
+        finalArr.push("fizzbuzz");
+        break;
+      case i % 3 === 0:
+        finalArr.push("fizz");
+        break;
+      case i % 5 === 0:
+        finalArr.push("buzz");
+        break;
+      default:
+        finalArr.push(i);
+  }
+  i++;
+}
+  return finalArr;
+}
+
+console.log(fizzBuzz(16));
+  
+  
+  
 
