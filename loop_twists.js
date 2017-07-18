@@ -104,7 +104,7 @@ function fizzBuzz(countTo) {
   let finalArr = [];
   let i = 1;
   while (i <= countTo) {
-    switch (i) {
+    switch (true) {
       case i % 15 === 0:
         finalArr.push("fizzbuzz");
         break;
@@ -122,7 +122,7 @@ function fizzBuzz(countTo) {
   return finalArr;
 }
 
-console.log(fizzBuzz(16));
+console.log(fizzBuzz(30));
   
   
   
