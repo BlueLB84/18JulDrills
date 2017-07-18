@@ -46,4 +46,37 @@ function min(numbers) {
     return currentMin;
 }
 
-// original function
+// original "Compute the Average" function
+/*  function average(numbers) {
+      var summation = 0;
+      for (i = 0; i < numbers.length; i++) {
+        summation += numbers[i];
+      }
+      return summation/numbers.length;
+    }
+*/
+
+function average(numbers) {
+    let summation = 0;
+    let i = 0;
+    while (i < numbers.length) {
+        summation += numbers[i];
+        i++;
+    }
+    return summation/numbers.length;
+}
+//console.log(average([3,6,9,12])); // 7.5
+
+// using forEach();
+
+function average2(numbers) {
+    let summation = 0;
+    numbers.forEach(function(item){
+        summation += item;
+        //console.log(summation);
+    })
+    return summation/numbers.length;
+}
+
+//console.log(average2([3,6,9,12])); // 7.5
+
