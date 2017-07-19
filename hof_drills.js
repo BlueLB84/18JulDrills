@@ -19,7 +19,7 @@ repeat(goodbye, 5);
 
 
 // Functions as arguments (2)
-Return only names that begin with 'R'
+// Return only names that begin with 'R'
 const myNames = ['Rich', 'Joe', 'Bhaumik', 'Ray'];
 
 const filteredNames = filter(myNames, function(name) {
@@ -61,3 +61,26 @@ function hazardWarningCreator(typeOfWarning) {
 
 console.log(flooding('Rogers road and Blue Hill Valley Drive'));
 console.log(flooding('Construction Ave and Tango Trail'));
+
+
+
+// forEach, filter and map
+    // run filter() method on given turtle movement array
+    // test that the array has to pass is:
+    // At each outer array index, is the first or second inner array index number negative?
+    //      if negative number, filter out
+
+const turtleMovements = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+
+var backwardsRight = turtleMovements.filter(function(movement) {
+    if ( (movement[0] < 0) || (movement[1] < 0) ) {
+        return movement;
+    }
+})
+
+console.log(backwardsRight);
+
+
+
+
+
