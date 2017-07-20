@@ -1,4 +1,4 @@
-// // Functions as arguments (1)
+// *****  Functions as arguments (1)  *****
 function hello() {
     return 'Hello world';
 }
@@ -18,7 +18,9 @@ repeat(goodbye, 5);
 
 
 
-// Functions as arguments (2)
+
+
+// *****  Functions as arguments (2)  *****
 // Return only names that begin with 'R'
 const myNames = ['Rich', 'Joe', 'Bhaumik', 'Ray'];
 
@@ -45,7 +47,8 @@ console.log(filteredNames);
 
 
 
-// Functions as return values
+
+// *****  Functions as return values  *****
 const rocksWarning = hazardWarningCreator('Rocks on the Road');
 const flooding = hazardWarningCreator('Road under water');
 const londonBridge = hazardWarningCreator('Bridge collapse');
@@ -64,7 +67,9 @@ console.log(flooding('Construction Ave and Tango Trail'));
 
 
 
-// forEach, filter and map
+
+
+// *****  forEach, filter and map  ******
     // run filter() method on given turtle movement array
     // test that the array has to pass is:
     // At each outer array index, is the first or second inner array index number negative?
@@ -79,6 +84,14 @@ var backwardsRight = turtleMovements.filter(function(movement) {
 })
 
 console.log(backwardsRight);
+
+
+
+
+
+// *****  .map()  *****
+
+
 
 
 
