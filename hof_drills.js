@@ -62,14 +62,16 @@ function hazardWarningCreator(typeOfWarning) {
     }
 }
 
-console.log(flooding('Rogers road and Blue Hill Valley Drive'));
-console.log(flooding('Construction Ave and Tango Trail'));
+flooding('Rogers road and Blue Hill Valley Drive');
+flooding('Construction Ave and Tango Trail');
 
 
 
 
 
-// *****  forEach, filter and map  ******
+// *****  filter, map, forEach  ****** //
+    
+// ***** filter *****
     // run filter() method on given turtle movement array
     // test that the array has to pass is:
     // At each outer array index, is the first or second inner array index number negative?
@@ -89,7 +91,26 @@ console.log(backwardsRight);
 
 
 
-// *****  .map()  *****
+// *****  map  *****
+
+const movingTurtle = turtleMovements.map(function(movement) {
+    return movement[0] + movement[1];
+})
+
+console.log(movingTurtle);
+
+
+
+
+// ***** forEach  *****
+// loop through each array item using forEach method
+// set both numbers of each array item to their absolute value
+
+turtleMovements.forEach(function(movement) {
+    console.log(Math.abs(movement[0]) + Math.abs(movement[1]));
+});
+
+
 
 
 
